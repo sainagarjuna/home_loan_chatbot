@@ -82,7 +82,7 @@ if user_input:
 
 st.write("### Loan EMI Breakdown")
 principal = st.number_input("Enter Loan Amount:", min_value=10000, value=500000)
-rate = st.slider("Enter Annual Interest Rate (%):", min_value=1.0, max_value=20.0, value=8.5)
+rate = st.number_input("Enter Annual Interest Rate (%):", min_value=1.0, max_value=20.0, value=8.5)
 tenure = st.number_input("Enter Tenure (Months):", min_value=12, max_value=360, value=240)
 
 if st.button("Calculate EMI Schedule"):
